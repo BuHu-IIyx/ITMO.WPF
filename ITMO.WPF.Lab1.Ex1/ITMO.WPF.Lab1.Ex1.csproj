@@ -6,4 +6,10 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="watermark.png">
+      <CustomToolNamespace>ITMO.WPF.Lab1.Ex1</CustomToolNamespace>
+    </None>
+  </ItemGroup>
+
 </Project>

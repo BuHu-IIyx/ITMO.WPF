@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,13 +15,14 @@ using System.Windows.Shapes;
 namespace ITMO.WPF.Lab1.Ex1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для ExpenseReportPage.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class ExpenseReportPage : Page
     {
-        public MainWindow()
+        public ExpenseReportPage()
         {
             InitializeComponent();
         }
+
     }
 }

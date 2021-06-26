@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,13 +15,20 @@ using System.Windows.Shapes;
 namespace ITMO.WPF.Lab1.Ex1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для ExpenseItHome.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class ExpenseItHome : Page
     {
-        public MainWindow()
+        public ExpenseItHome()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // View Expense Report
+            ExpenseReportPage expenseReportPage = new ExpenseReportPage();
+            this.NavigationService.Navigate(expenseReportPage);
         }
     }
 }
