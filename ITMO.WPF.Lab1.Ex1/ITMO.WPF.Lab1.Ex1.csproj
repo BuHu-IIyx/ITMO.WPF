@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Update="Data\XMLData.xml">
+      <CustomToolNamespace></CustomToolNamespace>
+    </None>
     <None Update="watermark.png">
       <CustomToolNamespace>ITMO.WPF.Lab1.Ex1</CustomToolNamespace>
     </None>

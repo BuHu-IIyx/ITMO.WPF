@@ -9,6 +9,18 @@
       Title="ExpenseIt – Home">
 
     <Grid Margin="10,0,10,10">
+        <Grid.Resources>
+            <!-- Expense Report Data -->
+            <XmlDataProvider 
+                x:Key="ExpenseDataSource" XPath = "Expenses/Persons" 
+                    Source="C:\Users\buhu_\source\repos\ITMO.WPF\ITMO.WPF.Lab1.Ex1\Data\XMLData.xml">
+            </XmlDataProvider>
+            <!-- Name item template -->
+            <DataTemplate x:Key="nameItemTemplate">
+                <Label Content="{Binding XPath=@Name}"/>
+            </DataTemplate>
+        </Grid.Resources>
+        
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\buhu_\source\repos\ITMO.WPF\ITMO.WPF.Lab1.Ex1\watermark.png"/>
         </Grid.Background>
@@ -29,11 +41,9 @@
         <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource listHeaderStyle}">
             <Label Style="{StaticResource listHeaderTextStyle}">Names</Label>
         </Border>
-        <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2">
-            <ListBoxItem>Mike</ListBoxItem>
-            <ListBoxItem>Lisa</ListBoxItem>
-            <ListBoxItem>John</ListBoxItem>
-            <ListBoxItem>Mary</ListBoxItem>
+        <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2"
+            ItemsSource ="{Binding Source={StaticResource ExpenseDataSource}, XPath=Person}"
+            ItemTemplate="{StaticResource nameItemTemplate}">
         </ListBox>
         <!-- View report button -->
         <Button 
