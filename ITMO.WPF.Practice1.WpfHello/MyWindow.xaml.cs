@@ -57,7 +57,8 @@ namespace ITMO.WPF.Practice1.WpfHello
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            wnd1.myWin = null;
+            if (wnd1!=null)
+                wnd1.myWin = null;
         }
     }
 }
