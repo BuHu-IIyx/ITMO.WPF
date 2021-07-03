@@ -30,7 +30,27 @@ namespace ITMO.WPF.Practice1.WpfHello
             lbl.Content = "Good day";
             setBut.IsEnabled = false;
             retBut.IsEnabled = false;
-
+            CommandBinding abinding = new();
+            abinding.Command = CustomCommands.Launch;
+            abinding.Executed += new ExecutedRoutedEventHandler(Launch_Handler);
+            abinding.CanExecute += new CanExecuteRoutedEventHandler(LaunchEnabled_Handler);
+            this.CommandBindings.Add(abinding);
+        }
+        private void LaunchEnabled_Handler(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = (bool)check.IsChecked;
+        }
+        private void Launch_Handler(object sender, ExecutedRoutedEventArgs e)
+        {
+            if (myWin == null)
+                myWin = new MyWindow();
+            myWin.Owner = this;
+            var location = NewWin.PointToScreen(new Point(0, 0));
+            myWin.Left = location.X + NewWin.Width;
+            myWin.Top = location.Y;
+            //myWin.Top = this.Top;
+            //myWin.Left = this.Left + this.Width;
+            myWin.Show();
         }
         private void SetBut()
         {
@@ -69,21 +89,7 @@ namespace ITMO.WPF.Practice1.WpfHello
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-        }
-
-        private void NewWin_Click(object sender, RoutedEventArgs e)
-        {
-            if (myWin == null) 
-                myWin = new MyWindow();
-            myWin.Owner = this;
-            var location = NewWin.PointToScreen(new Point(0, 0));
-            myWin.Left = location.X + NewWin.Width;
-            myWin.Top = location.Y;
-            //myWin.Top = this.Top;
-            //myWin.Left = this.Left + this.Width;
-            myWin.Show();
-        }
-
+        }        
         private void Grid_Click(object sender, RoutedEventArgs e)
         {
             FrameworkElement feSource = e.Source as FrameworkElement;
