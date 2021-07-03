@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice1.WpfHello
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice1.WpfHelloNav", "ITMO.WPF.Practice1.WpfHelloNav\ITMO.WPF.Practice1.WpfHelloNav.csproj", "{A1FB6395-5CD1-42C2-8B16-DE88AF406935}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice3.WpfRoutedEvent_1", "ITMO.WPF.Practice3.WpfRoutedEvent_1\ITMO.WPF.Practice3.WpfRoutedEvent_1.csproj", "{6EDF55FD-09C0-42A2-96FC-71F4352A7AC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice3.WpfRoutedEvent_2", "ITMO.WPF.Practice3.WpfRoutedEvent_2\ITMO.WPF.Practice3.WpfRoutedEvent_2.csproj", "{F1B97199-0489-4C8B-A6BA-C2761EBFDF0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{A1FB6395-5CD1-42C2-8B16-DE88AF406935}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1FB6395-5CD1-42C2-8B16-DE88AF406935}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1FB6395-5CD1-42C2-8B16-DE88AF406935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDF55FD-09C0-42A2-96FC-71F4352A7AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDF55FD-09C0-42A2-96FC-71F4352A7AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDF55FD-09C0-42A2-96FC-71F4352A7AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDF55FD-09C0-42A2-96FC-71F4352A7AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1B97199-0489-4C8B-A6BA-C2761EBFDF0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B97199-0489-4C8B-A6BA-C2761EBFDF0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1B97199-0489-4C8B-A6BA-C2761EBFDF0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1B97199-0489-4C8B-A6BA-C2761EBFDF0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
