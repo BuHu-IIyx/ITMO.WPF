@@ -23,6 +23,7 @@ namespace ITMO.WPF.Practice1.WpfHello
     {
         bool isDataDirty = false;
         public MyWindow myWin { get; set; }
+        string nameFile = "username.txt";
         public MainWindow()
         {
             InitializeComponent();
@@ -31,47 +32,21 @@ namespace ITMO.WPF.Practice1.WpfHello
             retBut.IsEnabled = false;
 
         }
-
-        private void setBut_Click(object sender, RoutedEventArgs e)
+        private void SetBut()
         {
-            System.IO.StreamWriter sw = null;
-            try
-            {
-                sw = new System.IO.StreamWriter("username.txt");
-                sw.WriteLine(setText.Text);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                if (sw != null)
-                    sw.Close();
-                retBut.IsEnabled = true;
-                isDataDirty = false;
-            }
+            System.IO.StreamWriter sw = new System.IO.StreamWriter(nameFile);
+            sw.WriteLine(setText.Text);
+            sw.Close();
+            retBut.IsEnabled = true;
+            isDataDirty = false;
+           
         }
-
-        private void retBut_Click(object sender, RoutedEventArgs e)
+        private void RetBut()
         {
-            System.IO.StreamReader sr = null;
-            try
-            {
-                using (sr = new System.IO.StreamReader("username.txt"))
-                    retLabel.Content = "Приветствую Вас, уважаемый " + sr.ReadToEnd();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                if (sr != null)
-                    sr.Close();
-            }
+            System.IO.StreamReader sr = new System.IO.StreamReader(nameFile);
+            retLabel.Content = "Приветствую Вас, уважаемый " + sr.ReadToEnd();
+            sr.Close();
         }
-
         private void setText_TextChanged(object sender, TextChangedEventArgs e)
         {
             setBut.IsEnabled = true;
@@ -107,6 +82,28 @@ namespace ITMO.WPF.Practice1.WpfHello
             //myWin.Top = this.Top;
             //myWin.Left = this.Left + this.Width;
             myWin.Show();
+        }
+
+        private void Grid_Click(object sender, RoutedEventArgs e)
+        {
+            FrameworkElement feSource = e.Source as FrameworkElement;
+            try
+            {
+                switch (feSource.Name)
+                {
+                    case "setBut":
+                        SetBut();
+                        break;
+                    case "retBut":
+                        RetBut();
+                        break;
+                }
+                e.Handled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
