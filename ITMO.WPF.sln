@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Lab1.Ex1", "ITMO.WPF.Lab1.Ex1\ITMO.WPF.Lab1.Ex1.csproj", "{0AC2760C-CB64-442D-96AB-C241336F7B17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Lab1.Ex1", "ITMO.WPF.Lab1.Ex1\ITMO.WPF.Lab1.Ex1.csproj", "{0AC2760C-CB64-442D-96AB-C241336F7B17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice1.WpfHello", "ITMO.WPF.Practice1.WpfHello\ITMO.WPF.Practice1.WpfHello.csproj", "{CBE07ED5-A71E-4323-B9AC-484B8D3CE13A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice1.WpfHelloNav", "ITMO.WPF.Practice1.WpfHelloNav\ITMO.WPF.Practice1.WpfHelloNav.csproj", "{A1FB6395-5CD1-42C2-8B16-DE88AF406935}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{0AC2760C-CB64-442D-96AB-C241336F7B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AC2760C-CB64-442D-96AB-C241336F7B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AC2760C-CB64-442D-96AB-C241336F7B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE07ED5-A71E-4323-B9AC-484B8D3CE13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE07ED5-A71E-4323-B9AC-484B8D3CE13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE07ED5-A71E-4323-B9AC-484B8D3CE13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE07ED5-A71E-4323-B9AC-484B8D3CE13A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1FB6395-5CD1-42C2-8B16-DE88AF406935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1FB6395-5CD1-42C2-8B16-DE88AF406935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1FB6395-5CD1-42C2-8B16-DE88AF406935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1FB6395-5CD1-42C2-8B16-DE88AF406935}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
