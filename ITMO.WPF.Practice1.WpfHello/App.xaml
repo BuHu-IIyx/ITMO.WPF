@@ -5,8 +5,8 @@
     <Application.Resources>
         <LinearGradientBrush x:Key="gradientStyle" StartPoint="0,0" EndPoint="0,1">
             <GradientStop Color="White" Offset="0" />
-            <GradientStop Color="Blue" Offset="0.5" />
-            <GradientStop Color="Red" Offset="1" />
+            <GradientStop Color="Cyan" Offset="0.5" />
+            <GradientStop Color="BlueViolet" Offset="1" />
         </LinearGradientBrush>
 
     </Application.Resources>
