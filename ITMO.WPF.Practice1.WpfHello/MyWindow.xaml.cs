@@ -21,6 +21,7 @@ namespace ITMO.WPF.Practice1.WpfHello
     {
         private bool _close;
         private MainWindow wnd1 = null;
+        
         public MyWindow()
         {
             InitializeComponent();
@@ -46,10 +47,11 @@ namespace ITMO.WPF.Practice1.WpfHello
 
         private void xButton_Click(object sender, RoutedEventArgs e)
         {
-            wnd1 = Owner as MainWindow;
+            wnd1 = Owner as MainWindow;            
             if (wnd1 != null)
             {
-                wnd1.txtBlock.Text = textBox.Text;
+                string SelectedStudent = listBox1.SelectedItem.ToString();
+                wnd1.txtBlock.Text = SelectedStudent + textBox.Text;
                 PrintLogFile();
             }
             Close();

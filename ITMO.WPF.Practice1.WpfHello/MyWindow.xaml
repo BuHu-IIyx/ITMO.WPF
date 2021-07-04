@@ -6,12 +6,26 @@
         xmlns:local="clr-namespace:ITMO.WPF.Practice1.WpfHello"
         mc:Ignorable="d"
         Title="MyWindow" Height="450" Width="800" Background="{StaticResource gradientStyle}" Closing="Window_Closing" Closed="Window_Closed" >
-   
+    <Window.Resources>
+        <local:StudentList x:Key="studentCollection"/>
+        <local:BoolToBrushConverter x:Key="boolToBrushConverter" />
+        <DataTemplate x:Key="listBoxTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Fill="{Binding Path=IsEnrolled, Converter={StaticResource boolToBrushConverter}}"
+                           Height="10"
+                           Width="10"
+                           Margin="0,0,5,0" />
+                <TextBlock Text="{Binding Path=StudentName}" />
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-        <Button x:Name="xButton" Content="Button" HorizontalAlignment="Left" Height="70" Width="70" Margin="325,178,0,0" VerticalAlignment="Top" 
+        <Button x:Name="xButton" Content="Button" HorizontalAlignment="Left" Height="70" Width="70" Margin="264,285,0,0" VerticalAlignment="Top" 
                 Template="{DynamicResource customButtonTemplate}" Click="xButton_Click"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="471,172,0,0" 
-                 Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="120"/>
-
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="400,84,0,0" 
+                 Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="298" Width="366"/>
+        <ListBox Height="120" HorizontalAlignment="Left" Margin="12,12,0,0" Name="listBox1" 
+                 VerticalAlignment="Top" Width="250" 
+                 ItemsSource="{Binding Source={StaticResource studentCollection}}" ItemTemplate="{StaticResource listBoxTemplate}"/>
     </Grid>
 </Window>
