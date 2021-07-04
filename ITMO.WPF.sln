@@ -5,13 +5,15 @@ VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Lab1.Ex1", "ITMO.WPF.Lab1.Ex1\ITMO.WPF.Lab1.Ex1.csproj", "{0AC2760C-CB64-442D-96AB-C241336F7B17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice1.WpfHello", "ITMO.WPF.Practice1.WpfHello\ITMO.WPF.Practice1.WpfHello.csproj", "{CBE07ED5-A71E-4323-B9AC-484B8D3CE13A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice1.WpfHello", "ITMO.WPF.Practice1.WpfHello\ITMO.WPF.Practice1.WpfHello.csproj", "{CBE07ED5-A71E-4323-B9AC-484B8D3CE13A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice1.WpfHelloNav", "ITMO.WPF.Practice1.WpfHelloNav\ITMO.WPF.Practice1.WpfHelloNav.csproj", "{A1FB6395-5CD1-42C2-8B16-DE88AF406935}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice1.WpfHelloNav", "ITMO.WPF.Practice1.WpfHelloNav\ITMO.WPF.Practice1.WpfHelloNav.csproj", "{A1FB6395-5CD1-42C2-8B16-DE88AF406935}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice3.WpfRoutedEvent_1", "ITMO.WPF.Practice3.WpfRoutedEvent_1\ITMO.WPF.Practice3.WpfRoutedEvent_1.csproj", "{6EDF55FD-09C0-42A2-96FC-71F4352A7AC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice3.WpfRoutedEvent_1", "ITMO.WPF.Practice3.WpfRoutedEvent_1\ITMO.WPF.Practice3.WpfRoutedEvent_1.csproj", "{6EDF55FD-09C0-42A2-96FC-71F4352A7AC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice3.WpfRoutedEvent_2", "ITMO.WPF.Practice3.WpfRoutedEvent_2\ITMO.WPF.Practice3.WpfRoutedEvent_2.csproj", "{F1B97199-0489-4C8B-A6BA-C2761EBFDF0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice3.WpfRoutedEvent_2", "ITMO.WPF.Practice3.WpfRoutedEvent_2\ITMO.WPF.Practice3.WpfRoutedEvent_2.csproj", "{F1B97199-0489-4C8B-A6BA-C2761EBFDF0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice9.BackgroundWorker", "ITMO.WPF.Practice9.BackgroundWorker\ITMO.WPF.Practice9.BackgroundWorker.csproj", "{279818D3-8E42-4B55-9DA0-08E182C6076A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F1B97199-0489-4C8B-A6BA-C2761EBFDF0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1B97199-0489-4C8B-A6BA-C2761EBFDF0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1B97199-0489-4C8B-A6BA-C2761EBFDF0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{279818D3-8E42-4B55-9DA0-08E182C6076A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{279818D3-8E42-4B55-9DA0-08E182C6076A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{279818D3-8E42-4B55-9DA0-08E182C6076A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{279818D3-8E42-4B55-9DA0-08E182C6076A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
