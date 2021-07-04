@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <LinearGradientBrush x:Key="gradientStyle" StartPoint="0,0" EndPoint="0,1">
-            <GradientStop Color="White" Offset="0" />
-            <GradientStop Color="Cyan" Offset="0.5" />
-            <GradientStop Color="BlueViolet" Offset="1" />
-        </LinearGradientBrush>
-
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ShinyRed.xaml"/>
+                <ResourceDictionary Source="MyDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
