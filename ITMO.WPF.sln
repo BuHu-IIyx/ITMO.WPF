@@ -13,11 +13,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice3.WpfRoute
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice3.WpfRoutedEvent_2", "ITMO.WPF.Practice3.WpfRoutedEvent_2\ITMO.WPF.Practice3.WpfRoutedEvent_2.csproj", "{F1B97199-0489-4C8B-A6BA-C2761EBFDF0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice9.BackgroundWorker", "ITMO.WPF.Practice9.BackgroundWorker\ITMO.WPF.Practice9.BackgroundWorker.csproj", "{279818D3-8E42-4B55-9DA0-08E182C6076A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice9.BackgroundWorker", "ITMO.WPF.Practice9.BackgroundWorker\ITMO.WPF.Practice9.BackgroundWorker.csproj", "{279818D3-8E42-4B55-9DA0-08E182C6076A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice10.UserForms", "ITMO.WPF.Practice9.UserForms\ITMO.WPF.Practice10.UserForms.csproj", "{2184D8E9-66D7-4597-939A-2B352C847778}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice10.UserForms", "ITMO.WPF.Practice9.UserForms\ITMO.WPF.Practice10.UserForms.csproj", "{2184D8E9-66D7-4597-939A-2B352C847778}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice10.WpfUserControl", "ITMO.WPF.Practice10.WpfUserControl\ITMO.WPF.Practice10.WpfUserControl.csproj", "{CF365B22-BB5B-4D8C-BFAF-C94C0BDED3E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice10.WpfUserControl", "ITMO.WPF.Practice10.WpfUserControl\ITMO.WPF.Practice10.WpfUserControl.csproj", "{CF365B22-BB5B-4D8C-BFAF-C94C0BDED3E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice11.WpfApplicationPolygon", "ITMO.WPF.Practice11.WpfApplicationPolygon\ITMO.WPF.Practice11.WpfApplicationPolygon.csproj", "{A7865373-046C-4461-B08E-9573685E85DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice11.InkPad", "ITMO.WPF.Practice11.InkPad\ITMO.WPF.Practice11.InkPad.csproj", "{AB51A4BB-DDFA-4EC4-AE58-44F9677EBDE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice11.WpfApplicationChart", "ITMO.WPF.Practice11.WpfApplicationChart\ITMO.WPF.Practice11.WpfApplicationChart.csproj", "{710D7240-1CCA-4A1E-9A29-A5706FA8444F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{CF365B22-BB5B-4D8C-BFAF-C94C0BDED3E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF365B22-BB5B-4D8C-BFAF-C94C0BDED3E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF365B22-BB5B-4D8C-BFAF-C94C0BDED3E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7865373-046C-4461-B08E-9573685E85DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7865373-046C-4461-B08E-9573685E85DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7865373-046C-4461-B08E-9573685E85DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7865373-046C-4461-B08E-9573685E85DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB51A4BB-DDFA-4EC4-AE58-44F9677EBDE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB51A4BB-DDFA-4EC4-AE58-44F9677EBDE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB51A4BB-DDFA-4EC4-AE58-44F9677EBDE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB51A4BB-DDFA-4EC4-AE58-44F9677EBDE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{710D7240-1CCA-4A1E-9A29-A5706FA8444F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{710D7240-1CCA-4A1E-9A29-A5706FA8444F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{710D7240-1CCA-4A1E-9A29-A5706FA8444F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{710D7240-1CCA-4A1E-9A29-A5706FA8444F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

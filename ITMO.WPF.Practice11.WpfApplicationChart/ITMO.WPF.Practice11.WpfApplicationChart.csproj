@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit">
+      <HintPath>..\..\..\..\Documents\ITMO\5. Разработка Windows-приложений на C#\2_WPF\Практика\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit">
+      <HintPath>..\..\..\..\Documents\ITMO\5. Разработка Windows-приложений на C#\2_WPF\Практика\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
