@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice11.WpfAppl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice11.InkPad", "ITMO.WPF.Practice11.InkPad\ITMO.WPF.Practice11.InkPad.csproj", "{AB51A4BB-DDFA-4EC4-AE58-44F9677EBDE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice11.WpfApplicationChart", "ITMO.WPF.Practice11.WpfApplicationChart\ITMO.WPF.Practice11.WpfApplicationChart.csproj", "{710D7240-1CCA-4A1E-9A29-A5706FA8444F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO.WPF.Practice11.WpfApplicationChart", "ITMO.WPF.Practice11.WpfApplicationChart\ITMO.WPF.Practice11.WpfApplicationChart.csproj", "{710D7240-1CCA-4A1E-9A29-A5706FA8444F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WPF.Practice12.Param", "ITMO.WPF.Practice11.Param\ITMO.WPF.Practice12.Param.csproj", "{8D052CE7-6310-4A97-8079-89994E494B13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{710D7240-1CCA-4A1E-9A29-A5706FA8444F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{710D7240-1CCA-4A1E-9A29-A5706FA8444F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{710D7240-1CCA-4A1E-9A29-A5706FA8444F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D052CE7-6310-4A97-8079-89994E494B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D052CE7-6310-4A97-8079-89994E494B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D052CE7-6310-4A97-8079-89994E494B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D052CE7-6310-4A97-8079-89994E494B13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
